@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#0000aa"
+            android:textColor="#ffffff"
+            android:text="eNurseNavigator"
+            android:textSize="12pt" 
+        	android:textAlignment="center" />
+        
+        <TextView
+            android:id="@+id/textCT"          
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="Schedule CT Study     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textConsult"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="Schedule Consult     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textResults"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="View test results     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+
+		<TextView
+            android:id="@+id/textRead"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="Read notes     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+
+		<TextView
+            android:id="@+id/textMessage"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="Message physician     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+
+		<TextView
+            android:id="@+id/textMap"            
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#00aa00"
+            android:textColor="#000000"
+            android:text="Anschutz Cancer Center     >"
+            android:textSize="10pt" 
+            android:textAlignment="center" />
+		
+        
+		<TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:background="#ccc"
+            android:text="      "
+            android:textSize="12pt"
+            android:textAlignment="center" />
+        
+
+</LinearLayout>
