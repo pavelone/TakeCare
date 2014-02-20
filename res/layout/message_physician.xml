@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <!-- Title -->
+
+    <TextView
+        android:id="@+id/MessageLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter message:"
+        android:textAppearance="?android:attr/textAppearanceLarge" >
+    </TextView>
+
+    <EditText
+        android:id="@+id/Message"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/priority"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/MessageLabel"
+        android:layout_marginTop="14dp"
+        android:ems="10"
+        android:hint="Enter message..."
+        android:inputType="textMultiLine|textShortMessage" >
+
+        <requestFocus />
+    </EditText>
+
+    <!-- Priority -->
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="25dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Reset" />
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:text="Submit" />
+
+    <RadioGroup
+        android:id="@+id/priorityGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resetButton"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/priorityUrgent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Urgent" />
+
+        <RadioButton
+            android:id="@+id/priorityNormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Normal" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/priority"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/priorityGroup"
+        android:layout_alignParentLeft="true"
+        android:text="Priority:"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

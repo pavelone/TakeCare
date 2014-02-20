@@ -24,6 +24,9 @@
         </activity>
         <activity android:name=".ViewTestResults" >
         </activity>
+        <activity android:name=".MessagePhysician" >
+        </activity>
+        
                 <activity android:name=".ImageViewActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" >

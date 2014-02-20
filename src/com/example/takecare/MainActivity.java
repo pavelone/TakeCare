@@ -92,7 +92,11 @@ public class MainActivity extends Activity {
 		textMessage.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getApplicationContext(), "Text your physician", Toast.LENGTH_SHORT).show();
+				
+				Intent intent = new Intent(MainActivity.this, MessagePhysician.class);
+				startActivity(intent);
+	
+				//Toast.makeText(getApplicationContext(), "Text your physician", Toast.LENGTH_SHORT).show();
 			}
 		});
 
