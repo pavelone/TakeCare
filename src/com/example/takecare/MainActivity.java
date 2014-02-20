@@ -75,7 +75,10 @@ public class MainActivity extends Activity {
 		textResults.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Toast.makeText(getApplicationContext(), "View test results", Toast.LENGTH_SHORT).show();
+				//Toast.makeText(getApplicationContext(), "View test results", Toast.LENGTH_SHORT).show();
+				Intent intent = new Intent(MainActivity.this, ViewTestResults.class);
+				startActivity(intent);
+
 			}
 		});
 
